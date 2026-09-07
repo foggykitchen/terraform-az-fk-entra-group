@@ -10,8 +10,13 @@ variable "description" {
   default     = "FoggyKitchen example security group with explicit members."
 }
 
-variable "member_object_ids" {
-  description = "Object IDs of users, groups, or service principals to add as members."
-  type        = set(string)
-  default     = []
+variable "user_principal_name_suffix" {
+  description = "Verified Microsoft Entra domain suffix for example users."
+  type        = string
+}
+
+variable "member_password" {
+  description = "Initial Microsoft Entra user password used by all example users."
+  type        = string
+  sensitive   = true
 }

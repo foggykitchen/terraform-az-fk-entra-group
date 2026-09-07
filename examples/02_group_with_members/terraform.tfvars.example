@@ -1,0 +1,6 @@
+display_name = "fk-entra-group-02"
+description  = "FoggyKitchen example security group with explicit members."
+
+member_object_ids = [
+  "00000000-0000-0000-0000-000000000000"
+]
